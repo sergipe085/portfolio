@@ -5,12 +5,29 @@ import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { Subtitle } from "../ui/subtitle";
 import { Title } from "../ui/title";
+import React from "react";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 export function GameDevelopmentFeaturedProjects() {
     const router = useRouter();
+    const ref = React.useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start start", "end start"],
+    });
+
+    const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+
+    const rotateZ = useSpring(
+        useTransform(scrollYProgress, [0, 1], [5, 0]),
+        springConfig
+    );
 
     return (
-        <div className="w-full py-40 h-[100vh]">
+        <div 
+            ref={ref}
+            className="w-full py-40 h-auto"
+        >
             <div className="w-64">
                 <Subtitle>Games</Subtitle>
                 <p>featured projects. <Button size={"sm"} variant={"link"} onClick={() => router.push("/games")}>see more</Button> </p>
