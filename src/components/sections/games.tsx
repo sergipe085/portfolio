@@ -1,13 +1,19 @@
+"use client"
+
+import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { Subtitle } from "../ui/subtitle";
 import { Title } from "../ui/title";
 
-export function Projects() {
+export function GameDevelopmentFeaturedProjects() {
+    const router = useRouter();
+
     return (
         <div className="w-full py-40 h-[100vh]">
-            <div className="w-24">
-                <Subtitle>Projects</Subtitle>
+            <div className="w-64">
+                <Subtitle>Games</Subtitle>
+                <p>featured projects. <Button size={"sm"} variant={"link"} onClick={() => router.push("/games")}>see more</Button> </p>
                 <Separator className="my-4 mb-12"/>
             </div>
             <div className="flex flex-col md:flex-row gap-8">

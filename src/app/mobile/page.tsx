@@ -100,20 +100,19 @@ const products = [
   },
 ];
 
-export default function FullstackHome() {
+export default function MobileHome() {
 
   return (
-    <>
-      <HeroParallax products={products} />
+    <div className="h-[100vh]">
       <div className="fixed pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_75%,black)]"></div>
       <div className="dark:bg-grid-white/[0.05] bg-grid-black/[0.05] h-full flex flex-col items-center justify-start pb-40 overflow-x-hidden">
         
-        <div className="w-full items-center justify-center flex gap-8 flex-col mt-16">
-          <Title>Looking for a <FlipWords words={["beautiful", "responsive", "modern"]}/> website?</Title>
+        <div className="w-full h-full items-center justify-center flex gap-8 flex-col mt-16">
+          <Title>Want to create a <FlipWords words={["responsive", "beautiful", "funny"]}/> app?</Title>
           <Button>Contact me</Button>
         </div>
       </div>
-    </>
+    </div>
     
   );
 }

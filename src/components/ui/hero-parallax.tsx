@@ -71,8 +71,6 @@ export const HeroParallax = ({
             }}
             className="max-w-7xl mx-auto px-4 w-full"
         >
-            
-            <Title>projects</Title>
             <motion.div className=" mt-16 flex flex-row-reverse space-x-reverse space-x-6 md:space-x-20 mb-20">
             {firstRow.map((product) => (
                 <ProductCard
