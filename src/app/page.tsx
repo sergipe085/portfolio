@@ -24,7 +24,7 @@ export default function Home() {
 
       <div className="px-6 w-full md:px-40">
         <Projects/>
-        <AboutMe/>
+        {/* <AboutMe/> */}
       </div>
 
     </div>

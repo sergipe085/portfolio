@@ -10,8 +10,8 @@ export function Projects() {
                 <Subtitle>Projects</Subtitle>
                 <Separator className="my-4 mb-12"/>
             </div>
-            <div className="flex flex-row gap-8">
-                <div className="bg-white aspect-video w-[550px] rounded-2xl">
+            <div className="flex flex-col md:flex-row gap-8">
+                <div className="bg-white aspect-video w-full md:w-[550px] rounded-2xl">
 
                 </div>
                 <div className="flex flex-col justify-end items-start gap-2 h-auto">
@@ -21,8 +21,8 @@ export function Projects() {
                 </div>
             </div>
             <Separator className="my-8"/>
-            <div className="flex flex-row-reverse gap-8">
-                <div className="bg-white aspect-video w-[550px] rounded-2xl">
+            <div className="flex flex-col md:flex-row-reverse gap-8">
+                <div className="bg-white aspect-video w-full md:w-[550px] rounded-2xl">
 
                 </div>
                 <div className="flex flex-col justify-end items-start gap-2 h-auto">
