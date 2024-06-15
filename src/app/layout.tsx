@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css";
+import { Button } from "@/components/ui/button";
+import { Header } from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +16,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) {  
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -24,6 +26,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header/>
           {children}
         </ThemeProvider>
       </body>
