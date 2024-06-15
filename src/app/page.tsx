@@ -1,20 +1,32 @@
+import { ContactButton } from "@/components/contact-button";
+import { AboutMe } from "@/components/sections/about-me";
+import { Projects } from "@/components/sections/projects";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { FlipWords } from "@/components/ui/flip-words";
+import { Title } from "@/components/ui/title";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center">
+    <div className="h-auto pt-40 w-full dark:bg-black bg-white  dark:bg-grid-white/[0.06] bg-grid-black/[0.06] relative flex flex-col items-center justify-center">
       
       {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+      {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
+      <p className="text-2xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 mb-2 md:py-4">
         {"<Hi, i'm Sérgio Banhos/>"}
       </p>
 
-      <div className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+      <div className="text-2xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 md:py-4">
         <FlipWords words={["game", "fullstack", "mobile"]} /> developer
       </div>
+
+      <ContactButton/>
+
+      <div className="px-6 w-full md:px-40">
+        <Projects/>
+        <AboutMe/>
+      </div>
+
     </div>
   );
 }
