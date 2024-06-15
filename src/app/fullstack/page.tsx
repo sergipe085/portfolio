@@ -1,10 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FlipWords } from "@/components/ui/flip-words";
 import { HeroParallax } from "@/components/ui/hero-parallax";
-import { SparklesCore } from "@/components/ui/sparkles";
 import { Title } from "@/components/ui/title";
-import { useScroll } from "framer-motion";
-import Image from "next/image";
 import React from "react";
 
 const products = [
