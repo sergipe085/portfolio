@@ -7,7 +7,7 @@ import { useScroll } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-export const products = [
+const products = [
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
