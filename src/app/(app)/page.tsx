@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="h-auto py-40 w-full dark:bg-black bg-white  dark:bg-grid-white/[0.06] bg-grid-black/[0.06] relative flex flex-col items-center justify-center">
+    <div className="h-auto py-40 w-full flex flex-col items-center justify-center">
       
       <motion.div
         className="flex items-center flex-col"

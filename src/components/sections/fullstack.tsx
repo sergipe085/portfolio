@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { Subtitle } from "../ui/subtitle";
-import { Title } from "../ui/title";
 import { useRouter } from "next/navigation";
 
 export function FullstackFeaturedProjects() {
